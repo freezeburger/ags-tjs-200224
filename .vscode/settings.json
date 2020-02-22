@@ -1,0 +1,23 @@
+{
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact",
+    "markdown": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "editor.minimap.enabled": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "explorer.incrementalNaming": "smart"
+}
