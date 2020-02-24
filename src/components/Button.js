@@ -11,6 +11,10 @@ function Button(props) {
     )
 }
 
+Button.defaultProps = {
+    children:'Default Text'
+}
+
 Button.propTypes = {
 
 }

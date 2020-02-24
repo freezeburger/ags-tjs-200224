@@ -11,8 +11,9 @@ function Question(props) {
         <div>
             <Range></Range>
             <Field></Field>
-            <Button text="My Text"></Button>
+            <Button></Button>
             <Button>My Text</Button>
+            <Button><button>X</button></Button>
         </div>
     )
 }
