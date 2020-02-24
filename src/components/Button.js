@@ -16,7 +16,7 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
-
+    children: PropTypes.string
 }
 
 export default Button
