@@ -46,6 +46,7 @@ React Fundamentals Application Developpment
         * Question
         * Header
 * **Add Bootstrap CSS** `npm i bootstrap` [List of UI Component](https://www.google.com/search?q=awesome+reac)
+* **Component Tree** Inspect with ["React Developepr Tools"](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
 
 # Project Note
 

@@ -3,10 +3,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Button(props) {
-    const {} = props
+    // Destructuration : extracts "children" key from "props" Object
+    const {children} = props
 
     return (
-        <div></div>
+        <div>{children}</div>
     )
 }
 
