@@ -33,7 +33,18 @@ React Fundamentals Application Developpment
     * VS Code
     * Framework CSS (native or component)
     * Scaffolder `create-react-app` -> `npx create-react-app APP_NAME`
-    * VS Code Extensions : "React Foodtruck", "Material Icon Theme"
+    * VS Code Extensions : "React Food Truck", "Material Icon Theme"
+* **Component** Re-usable, configurable, UI feature
+    * `class` component
+    * `function` component (prefered)
+    * **Here We Create**
+        * Inquiry
+        * Stepper
+        * Button
+        * Range
+        * Field
+        * Question
+        * Header
 
 # Project Note
 
