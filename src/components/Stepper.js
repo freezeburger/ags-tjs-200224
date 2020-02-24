@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Question from './Question';
 
 function Stepper(props) {
-    const {} = props
+    const {questions,answerCallback} = props
 
     return (
         <div>
