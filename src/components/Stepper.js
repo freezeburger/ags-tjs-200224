@@ -30,7 +30,12 @@ function Stepper(props) {
   const startHandler = () => {
     setStarted(true);
   };
-  const questionHandler = () => {};
+
+  const questionHandler = (question, answerValue) => {
+    // Handle Responsability To Parent Component
+    answerCallback(question, answerValue)
+  };
+  
   const finishHandler = () => {};
 
   return (
