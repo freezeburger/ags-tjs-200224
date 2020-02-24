@@ -1,19 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 function Field(props) {
-    const {} = props
+  const {} = props;
 
-    // React.Fragment is a virtual wrapper not rendered in the DOM
-    return (
-        <React.Fragment>
-            <input className="form-control"/>
-        </React.Fragment>
-    )
+  const inputStyles = {
+    margin: "5px",
+    maxWidth:'99%'
+  };
+
+  // React.Fragment is a virtual wrapper not rendered in the DOM
+  return (
+    <React.Fragment>
+      <input className="form-control" style={inputStyles}/>
+      <div className="alert alert-danger" style={inputStyles}><strong>Invalid Value</strong></div>
+    </React.Fragment>
+  );
 }
 
-Field.propTypes = {
+Field.propTypes = {};
 
-}
-
-export default Field
+export default Field;
