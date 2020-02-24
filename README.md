@@ -45,6 +45,7 @@ React Fundamentals Application Developpment
         * Field
         * Question
         * Header
+* **Add Bootstrap CSS** `npm i bootstrap`
 
 # Project Note
 
