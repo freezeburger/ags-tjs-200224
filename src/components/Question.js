@@ -37,7 +37,7 @@ function Question(props) {
         )}
 
         {answerText && (
-          <NextButton actionCallback={() => questionCallback(question,answerText)}></NextButton>
+          <NextButton actionCallback={() => { questionCallback(question,answerText); setAnswerText(""); } }></NextButton>
         )}
       </div>
     </div>
