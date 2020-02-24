@@ -28,3 +28,10 @@ React Fundamentals Application Developpment
 ## Chapter :
 
 * **Initial Commit:** The Starting Point. 
+* **Validation** Tooling
+    * NodeJS + npm
+    * VS Code
+    * Framework CSS (native or component)
+    * Scaffolder `create-react-app` -> `npx react-app APP_NAME`
+    * VS Code Extensions : "React Foodtruck", "Material Icon Theme"
+
