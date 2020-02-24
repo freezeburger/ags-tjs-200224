@@ -19,7 +19,7 @@ function Question(props) {
 
   return (
     <div>
-      <Range></Range>
+{/*       <Range></Range>
 
       <PhoneField></PhoneField>
       <NameField></NameField>
@@ -28,7 +28,7 @@ function Question(props) {
        <StartButton></StartButton>
        <FinishButton></FinishButton>
        <PreviousButton></PreviousButton>
-       <NextButton></NextButton>
+       <NextButton></NextButton> */}
     </div>
   );
 }
