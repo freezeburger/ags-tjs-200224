@@ -52,7 +52,10 @@ React Fundamentals Application Developpment
     * Inquiry - Store Logic
     * Stepper - Navigate Question List
     * Question - Display
-
+* **Adding Documentation Tooling** https://github.com/styleguidist/react-styleguidist
+     * `npm i react-styleguidist`
+     * `npx styleguidist server`
+     * `npx styleguidist build`
 # Project Note
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
