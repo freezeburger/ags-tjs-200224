@@ -15,7 +15,7 @@ function Question(props) {
     return (
         <div>
             <Range></Range>
-            <Field></Field>
+            <Field ></Field>
 
             <Button color="success" actionCallback={buttonClickHandler}>My Text</Button>
  
