@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Range from "./Range";
-import Field from "./Field";
-import Button from "./Button";
+
+import {FinishButton,NextButton,PreviousButton,StartButton} from './App.Buttons'
+
 
 function Question(props) {
   const {} = props;
@@ -19,16 +20,10 @@ function Question(props) {
     <div>
       <Range></Range>
       
-      <Field
-        errorMessage="Too Many Characters !"
-        rule={/^\w{0,8}$/}
-        actionCallback={nameFiledHandler}
-        placeholder="name"
-      ></Field>
-
-      <Button color="success" actionCallback={buttonClickHandler}>
-        My Text
-      </Button>
+       <StartButton></StartButton>
+       <FinishButton></FinishButton>
+       <PrevButton></PrevButton>
+       <NextButton></NextButton>
     </div>
   );
 }
