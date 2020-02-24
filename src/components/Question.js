@@ -11,9 +11,12 @@ function Question(props) {
         <div>
             <Range></Range>
             <Field></Field>
-            <Button></Button>
+
             <Button>My Text</Button>
-            <Button><button>X</button></Button>
+            <Button color="danger">My Text</Button>
+            <Button color="success">My Text</Button>
+            <Button color="primary">My Text</Button>
+
         </div>
     )
 }

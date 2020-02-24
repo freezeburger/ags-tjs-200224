@@ -4,19 +4,28 @@ import PropTypes from 'prop-types'
 
 function Button(props) {
     // Destructuration : extracts "children" key from "props" Object
-    const {children} = props
+    const {children, color, margin} = props
 
+    const buttonStyles = {
+        margin // Is equivalent as "margin:margin"
+    }
+
+    // classNames (npm i classnames) utility helps with className computing
     return (
-        <div>{children}</div>
+        <div className={'btn btn-' + color} style={buttonStyles}>{children}</div>
     )
 }
 
 Button.defaultProps = {
-    children:'Default Text'
+    children:'Default Text',
+    color:'primary',
+    margin:'4px'
 }
 
 Button.propTypes = {
-    children: PropTypes.string
+    children: PropTypes.string,
+    color:PropTypes.oneOf(['primary','danger','warning','success']),
+    margin:PropTypes.oneOf(['4px','none'])
 }
 
 export default Button
