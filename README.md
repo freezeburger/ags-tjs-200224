@@ -45,7 +45,7 @@ React Fundamentals Application Developpment
         * Field
         * Question
         * Header
-* **Add Bootstrap CSS** `npm i bootstrap`
+* **Add Bootstrap CSS** `npm i bootstrap` [List of UI Component](https://www.google.com/search?q=awesome+reac)
 
 # Project Note
 
