@@ -7,13 +7,17 @@ function Stepper(props) {
 
     const {questions,answerCallback} = props
 
-/*     const started = questions.filter( item => item.answer !== null )
-    console.log(started) */
+    /*     
+    const started = questions.filter( item => item.answer !== null )
+    console.log(started)
+    */
 
     const unanswered = questions.filter( item => item.answer === null )
 
-    const [started,setStarted] = React.useState( unanswered.length )
+    const [started,setStarted] = React.useState( unanswered.length < questions.length )
     const finished = questions.every( item => item.answer !== null );
+
+    console.log(started, finished)
 
     const startHandler = () => {}
     const questionHandler = () => {}
