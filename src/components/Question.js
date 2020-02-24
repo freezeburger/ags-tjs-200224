@@ -19,7 +19,6 @@ function Question(props) {
 
             <Button color="success" actionCallback={buttonClickHandler}>My Text</Button>
  
-
         </div>
     )
 }

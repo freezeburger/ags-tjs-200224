@@ -4,8 +4,11 @@ import PropTypes from 'prop-types'
 function Field(props) {
     const {} = props
 
+    // React.Fragment is a virtual wrapper not rendered in the DOM
     return (
-        <div></div>
+        <React.Fragment>
+            <input className="form-control"/>
+        </React.Fragment>
     )
 }
 
