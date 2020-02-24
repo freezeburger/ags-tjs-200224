@@ -1,11 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Question from './Question';
 
 function Stepper(props) {
     const {} = props
 
     return (
-        <div></div>
+        <div>
+            <Question></Question>
+        </div>
     )
 }
 
