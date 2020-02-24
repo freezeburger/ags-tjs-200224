@@ -1,39 +1,55 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Question from './Question';
-import { StartButton, FinishButton } from './App.Buttons';
+import React from "react";
+import PropTypes from "prop-types";
+import Question from "./Question";
+import { StartButton, FinishButton } from "./App.Buttons";
+import { createSecureContext } from "tls";
 
 function Stepper(props) {
+  const { questions, answerCallback } = props;
 
-    const {questions,answerCallback} = props
-
-    /*     
+  /*     
     const started = questions.filter( item => item.answer !== null )
     console.log(started)
     */
 
-    const unanswered = questions.filter( item => item.answer === null )
+  const unanswered = questions.filter(item => item.answer === null);
 
-    const [started,setStarted] = React.useState( unanswered.length < questions.length )
-    const finished = questions.every( item => item.answer !== null );
+  const [started, setStarted] = React.useState(
+    unanswered.length < questions.length
+  );
+  const finished = questions.every(item => item.answer !== null);
+  const maxQuestionNumber = questions.length 
 
-    console.log(started, finished)
+  /**
+   * Question ID are incrementals
+   * 1 < max - Has a NEXT question
+   * (>1) < max - Has a PREVIOUS/NEXT question
+   * (=max) - Has a PREVIOUS question
+   */
 
-    const startHandler = () => {}
-    const questionHandler = () => {}
-    const finishHandler = () => {}
+  const startHandler = () => {
+    setStarted(true);
+  };
+  const questionHandler = () => {};
+  const finishHandler = () => {};
 
-    return (
-        <div className="container d-flex flex-column justify-content-center">
-            { ( !started && !finished ) && <StartButton actionCallback={startHandler}></StartButton> } 
-            { ( started && !finished ) &&<Question questionCallback={questionHandler}></Question> }
-            { finished &&<FinishButton actionCallback={finishHandler}></FinishButton>  }
-        </div>
-    )
+  return (
+    <div className="container d-flex flex-column justify-content-center">
+      {!started && !finished && (
+        <StartButton actionCallback={startHandler}></StartButton>
+      )}
+      {started && !finished && (
+        <Question
+          questionCallback={questionHandler}
+          question={unanswered[0]}
+          max={maxQuestionNumber}
+        ></Question>
+      )}
+      {finished && <FinishButton actionCallback={finishHandler}></FinishButton>}
+    </div>
+  );
 }
 
-Stepper.propTypes = {
+Stepper.propTypes = {};
 
-}
-
-export default Stepper
+export default Stepper;
