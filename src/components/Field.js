@@ -19,12 +19,13 @@ function Field(props) {
 
   const inputStyles = {
     margin: "5px",
-    maxWidth: "99%"
+    maxWidth: "95%"
   };
 
   // React.Fragment is a virtual wrapper not rendered in the DOM
   return (
     <React.Fragment>
+     { valid && "✔️"}
       <input
         className="form-control"
         style={inputStyles}
@@ -42,7 +43,7 @@ function Field(props) {
   );
 }
 Field.defaultProps = {
-  value: "test",
+  value: "",
   rule: /.*/,
   errorMessage: "Invalid Value",
   actionCallback:()=>false,

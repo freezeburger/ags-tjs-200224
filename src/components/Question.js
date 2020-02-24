@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Range from "./Range";
 
 import {FinishButton,NextButton,PreviousButton,StartButton} from './App.Buttons'
+import { PhoneField, NameField, AddressField } from "./App.Fields";
 
 
 function Question(props) {
@@ -19,10 +20,14 @@ function Question(props) {
   return (
     <div>
       <Range></Range>
+
+      <PhoneField></PhoneField>
+      <NameField></NameField>
+      <AddressField></AddressField>
       
        <StartButton></StartButton>
        <FinishButton></FinishButton>
-       <PrevButton></PrevButton>
+       <PreviousButton></PreviousButton>
        <NextButton></NextButton>
     </div>
   );
