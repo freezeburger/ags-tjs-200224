@@ -4,7 +4,7 @@
     "sanaajani.taskrunnercode",
     "ms-vscode.vscode-typescript-tslint-plugin",
     "esbenp.prettier-vscode",
-    "streetsidesoftware.code-spell-checker"
-    //"burkeholland.react-food-truck"
+    "streetsidesoftware.code-spell-checker",
+    "burkeholland.react-food-truck"
   ]
 }
