@@ -13,16 +13,32 @@ import { PhoneField, NameField, AddressField } from "./App.Fields";
 function Question(props) {
   const { question, max, questionCallback } = props;
 
+  const [answerText, setAnswerText] = React.useState("");
+
   // Component can be pass as variables
   const QuestionField = question.type;
+  const questionFieldHandler = value => {
+    setAnswerText(value);
+  };
 
   return (
     <div className="card">
       <div className="d-flex flex-column justify-content-center">
         <h2>{question.text}</h2>
-        <QuestionField />
-        <PreviousButton></PreviousButton>
-        <NextButton></NextButton>
+        <QuestionField actionCallback={questionFieldHandler} />
+
+        { (question.id  > 1 ) &&  <PreviousButton actionCallback={() => false}></PreviousButton> }
+        
+
+        {!answerText && (
+          <span style={{ opacity: ".5" }}>
+            <NextButton actionCallback={() => false}></NextButton>
+          </span>
+        )}
+
+        {answerText && (
+          <NextButton actionCallback={() => questionCallback(question,answerText)}></NextButton>
+        )}
       </div>
     </div>
   );
