@@ -32,14 +32,14 @@ function Stepper(props) {
   };
 
   const questionHandler = (question, answerValue) => {
-    // Handle Responsability To Parent Component
+    // Handle Responsability To Parent
     answerCallback(question, answerValue)
   };
   
   const finishHandler = () => {};
 
   return (
-    <div className="container d-flex flex-column justify-content-center">
+    <div style={{height:'250px'}} className="container d-flex flex-column justify-content-center">
       {!started && !finished && (
         <StartButton actionCallback={startHandler}></StartButton>
       )}
